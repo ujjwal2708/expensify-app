@@ -1,0 +1,8 @@
+npm install chalk --dev : for installing developer dependencies
+
+to install production dependencies
+
+npm install --production
+
+
+npm install // install both dev as well as production dependencies

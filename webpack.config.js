@@ -9,7 +9,7 @@ module.exports = env => {
   return {
     entry: "./src/app.js",
     output: {
-      path: path.join(__dirname, "public"), // needs to be a absolute path
+      path: path.join(__dirname, "public", "dist"), // needs to be a absolute path
       filename: "bundle.js"
     },
 
@@ -50,7 +50,8 @@ module.exports = env => {
 
     devServer: {
       contentBase: path.join(__dirname, "public"),
-      historyApiFallback: true
+      historyApiFallback: true,
+      publicPath: "/dist/"
     }
   };
 };
